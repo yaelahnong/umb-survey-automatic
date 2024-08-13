@@ -19,3 +19,4 @@ function checkSurvey()
   return results
 }
 checkSurvey()
+document.querySelector('#save-data').click()

@@ -1,4 +1,3 @@
-// PASTE CODE BELOW IN CONSOLE TAB WHEN OPENING UMB SURVEY
 function checkSurvey(level)
 {
   const results = []

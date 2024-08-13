@@ -9,7 +9,7 @@ function checkSurvey(level)
           checkHarapan.setAttribute('checked', '')
       }
 
-      const checkKepuasan = document.querySelector('.kepuasan'+i+'#h'+level)
+      const checkKepuasan = document.querySelector('.kepuasan'+i+'#k'+level)
 
       if (checkKepuasan !== null) {
           checkKepuasan.setAttribute('checked', '')

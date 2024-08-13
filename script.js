@@ -3,10 +3,16 @@ function checkSurvey(level)
   const results = []
 
   for (let i = 0; i < 300; i++){
-      const row = document.querySelector('.harapan'+i+'#h'+level)
+      const checkHarapan = document.querySelector('.harapan'+i+'#h'+level)
 
-      if (row !== null) {
-          row.setAttribute('checked', '')
+      if (checkHarapan !== null) {
+          checkHarapan.setAttribute('checked', '')
+      }
+
+      const checkKepuasan = document.querySelector('.kepuasan'+i+'#h'+level)
+
+      if (checkKepuasan !== null) {
+          checkKepuasan.setAttribute('checked', '')
       }
   }
 

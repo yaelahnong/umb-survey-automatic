@@ -18,4 +18,3 @@ function checkSurvey()
 
   return results
 }
-checkSurvey()

@@ -1,22 +1,34 @@
-function checkSurvey()
+function selectAllSurvey()
 {
-  const results = []
+  const listHarapan = document.querySelectorAll('select[name="harapan[]"]');
+  const listKepuasan = document.querySelectorAll('select[name="kepuasan[]"]');
 
   for (let i = 0; i < 300; i++){
-      const checkHarapan = document.querySelector('.harapan'+i+'#h1')
+    if (listHarapan[i] !== undefined) {
+      const pilihanHarapan = listHarapan[i].querySelector('option[value="3"]');
 
-      if (checkHarapan !== null) {
-          checkHarapan.setAttribute('checked', '')
+      if (pilihanHarapan !== null) {
+          pilihanHarapan.setAttribute('selected', '')
       }
+    }
 
-      const checkKepuasan = document.querySelector('.kepuasan'+i+'#k4')
+    if (listKepuasan[i] !== undefined) {
+      const pilihanKepuasan = listKepuasan[i].querySelector('option[value="3"]');
 
-      if (checkKepuasan !== null) {
-          checkKepuasan.setAttribute('checked', '')
+      if (pilihanKepuasan !== null) {
+          pilihanKepuasan.setAttribute('selected', '')
       }
+    }
   }
-
-  return results
 }
-checkSurvey()
-document.querySelector('#save-data').click()
+selectAllSurvey()
+document.querySelector('.next-btn').click()
+document.querySelector('.next-btn').click()
+document.querySelector('.next-btn').click()
+document.querySelector('.next-btn').click()
+document.querySelector('.next-btn').click()
+document.querySelector('.next-btn').click()
+document.querySelector('.next-btn').click()
+document.querySelector('.next-btn').click()
+document.querySelector('.next-btn').click()
+document.querySelector('#save-quisioner-mahasiswa').click()
